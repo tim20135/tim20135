@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="{{url_for("static",filename="stylesTEST.css")}}"/>
+    <link rel="icon" type="image/x-icon" href="{{url_for("static",filename="favicon.ico")}}">
+    <title>CANSAT COMPETITION 2025 SUBMISSION: GREEN BEAN</title>
+</head>
+<body> 
+    <h1 class="centre"><u>CANSAT COMPETITION 2025 SUBMISSION: GREEN BEAN</u></h1>
+    <div id="myNav" class="overlay">
+        <div href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</div>
+        <div class="overlay-content">
+          <a href="/first">The Team</a>
+          <a href="/third">Primary mission</a>
+          <a href="/fourth">Secondary mission</a>
+          <a href="/second">Contact us!</a>
+        </div>
+      </div>
+      <span id="span1."class="span1" style="cursor:pointer;font-family: 'Courier New', Courier, monospace;font-weight:bold;" onclick="openNav()">&#9776;</span>
+      
+      <script>
+      function openNav() {
+        document.getElementById("myNav").style.height="70%";
+      }
+      
+      function closeNav() {
+        document.getElementById("myNav").style.height = "0%";
+      }
+      </script>
+    <div id="box">
+        <img class="img1"  src="{{url_for("static",filename="Cansat.png")}}" alt="Cansat Logo">
+        <img class="img2"  src="{{url_for("static",filename="ESA.png")}}" alt="European Space Agency">
+        <img class="img3"  src="{{url_for("static",filename="high.png")}}" alt="Our School Logo">
+    </div>
+    <!-- THIS CODE IS NO LONGER USED, ARCHIVED
+    <table class="table2">
+        <tr>
+            <th><a href="/first"><button type="button" class="button1">The Team</button><a/></th>
+            <th>Secondary objective</th>
+        </tr>
+    </table>
+    -->
+    <article>
+    <h1></h1>
+    </article>
+    <h1 class="header">Tables of data<h1/>
+
+    <table class="table1">
+        <tr>
+            <th><ins>Altitude</th>
+            <th><ins>Lux</th>
+            <th><ins>Voltage</th>
+        </tr>
+        {%for i in range(data|length)%}
+            <tr>
+            <td>{{data[i]}}</td>
+            <td>{{data1[i]}}</td>
+            <td>{{data2[i]}}</td>
+            <tr/>
+        {% endfor %}
+    </table>
+    <div>   
+    <table class="table1">
+        <tr>
+            <th colspan=4><ins>Averages</th>
+        </tr>
+        <tr>
+            <th></th>
+            <th>Mean</th>
+            <th>Median</th>
+            <th>Standard Deviation</th>
+        </tr>
+        <tr>
+            <th>Lux</th>
+            <td>{{data1[-1]}}</td>
+            <td>{{data1[-3]}}</td>
+            <td>{{data1[-2]}}</td>
+        </tr>
+        <tr>
+            <th>Voltage</th>
+            <td>{{data2[-1]}}</td>
+            <td>{{data2[-3]}}</td>
+            <td>{{data2[-2]}}</td>
+        </tr>
+    </table>
+    <!--<img class="img4" src="{{url_for("static",filename="Databricks_Logo.png")}}"> ONLY FOR THE FUNNY--> 
+    </div>   
+</body>
+</html>

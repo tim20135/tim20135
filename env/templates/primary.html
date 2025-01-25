@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="{{url_for("static",filename="styles3.css")}}"/>
+    <link rel="icon" type="image/x-icon" href="{{url_for("static",filename="favicon.ico")}}">
+    <title> Primary mission</title>
+</head>
+<body>
+    <h1 class="centre">Our Primary Mission!</h1>
+    <img class="img1" style="width: 16.5vw;"src="{{url_for("static",filename="comp.jpg")}}" alt="Competition photo">
+    <img class="img1" style="left: 72.5vw" src="{{url_for("static",filename="comp1.jpg")}}" alt="Competition photo 2">
+    <div id="Nav" class="overlay">
+        <div href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#187;</div>
+          <div class="overlay-content">
+              <table class="table1">
+                  <tr>
+                  <td><a href="/">Back to Home</a></td>
+                  <td><a href="/first"> The Team</a></td>
+                  <td><a href="/fourth"> Secondary Mission</a></td>
+                  <td><a href="/second"> Contact Us!</a></td>
+                  </tr>
+              </table>
+          </div>
+        </div>
+      </div>
+        
+        <span id="span1."class="span1" style="cursor:pointer;font-family: 'Courier New', Courier, monospace;font-weight:bold;" onclick="openNav()">&#171;</span>
+        
+        <script>
+        function openNav() {
+          document.getElementById("Nav").style.width="100%";
+        }
+        
+        function closeNav() {
+          document.getElementById("Nav").style.width = "0%";
+        }
+        </script>
+    <div class="intro">
+        <a href="https://www.stem.org.uk/esero/secondary/competitions-and-challenges/cansat"> From the CANSAT website</a>
+        <blockquote>
+            "The CanSat competition provides students with the opportunity to have practical experience working on a small-scale space project. They are tasked with designing and building their own simulation of a real satellite, integrated within the volume and shape of a soft drink can. The challenge for students is to fit all the major subsystems found in a satellite, such as power, sensors and a communication system, into this minimal volume. After building their CanSat teams will be invited to launch events across the UK to launch their CanSats on small rockets, with their CanSats returning to Earth using a parachute designed by the students."
+        </blockquote>
+    </div>
+    <h2 class="bright"> What does this mean for us?</h2>    
+    <div class="box">
+        <p> The main aim of this competition is to design a satellite, with the size dimensions of a can, which will be launched in March 2025 about a kilometer into the sky by a rocket supplied to us. We will have to design almost everything about the satellite-- its container, the electronics and mechanical systems inside the can, and even the parachute that will allow the can to survive the return journey. This is particularly tricky as there are several complex calculations required to ensure that our parachute makes the satellite fall at the appropriate rate.</p>
+    </div>
+    <div class="box" style="left: 62vw; width: 90%;">
+        <p>We also have to stress test both the can and the parachute to ensure that nothing will break during the rocket's launch or during the landing. In our case, we have used layered threads to reinforce our parachute cables. We've also added small microprocessors into our can which will record the altitude, temperature and air pressure as it descends through the sky. An aerial will also be installed to wirelessly transmit the data to our computer on the ground. This also comes with programming challenges that we have strived to solve.</p>
+    </div>
+</body>
+</html>
