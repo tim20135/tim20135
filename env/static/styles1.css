@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.blob {
+  position: absolute;
+  top: 15vh;
+  width: 35vw;
+  height: 40vh;
+}
+
+.blob:nth-child(2) {
+  filter: blur(50px);
+}
+@media only screen and (max-width: 680px) {
+  .blob:nth-child(2) {
+    filter: blur(30px);
+  }
+}
+
+button {
+  position: absolute;
+  left: 2%;
+  margin: 8px;
+  height: 5vh;
+  width: 2vw;
+  top: 3%;
+  transition-duration: 0.4s;
+  font-size: large;
+  font-weight: bold;
+  border: #FFFDD0 outset;
+  border-width: 7px;
+  border-radius: 10px;
+}
+@media only screen and (max-width: 680px) {
+  button {
+    margin: 4px;
+  }
+}
+
+button:hover {
+  background: lightgreen;
+  text-decoration: underline;
+}
+
+table.header {
+  position: absolute;
+  left: 8%;
+  top: 10%;
+  font-size: 1.3vw;
+  padding-top: 0%;
+}
+table.header td {
+  padding-bottom: 10%;
+  transition-duration: 0.4s;
+}
+table.header td:hover {
+  color: blue;
+  text-decoration: underline overline;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #00FFFF, 0 0 82px #00FFFF, 0 0 92px #00FFFF, 0 0 102px #00FFFF, 0 0 151px #00FFFF;
+}
+
+.gradient {
+  background: linear-gradient(319deg, #1fce43, #15ccdd, #606add);
+  background-size: 600% 600%;
+  animation: AnimationName 25s ease infinite;
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 4%;
+  }
+  50% {
+    background-position: 100% 97%;
+  }
+  100% {
+    background-position: 0% 4%;
+  }
+}
+.overlay {
+  height: 15%;
+  width: 0%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background: linear-gradient(188deg, #1ad6a5, #e16c0d, #2f24e6);
+  background-size: 600% 600%;
+  animation: Animation1 10s ease infinite;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  transition: 0.2s;
+  opacity: 0.99;
+  display: flex;
+}
+
+.overlay-content {
+  position: relative;
+  top: 12%;
+  text-align: center;
+  margin-top: 2vh;
+  margin-left: 2.8vw;
+  font-family: "Courier New", Courier, monospace;
+  display: flex;
+}
+
+.overlay a {
+  text-decoration: none;
+  font-size: 2.4vw;
+  font-weight: bold;
+  color: whitesmoke;
+  display: block;
+  transition: 0.3s;
+  float: left;
+}
+
+.overlay div {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 4vw;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: lightgray;
+  font-size: 2.5vw;
+  text-decoration: underline;
+}
+
+.overlay div:hover, .overlay div:focus {
+  color: red;
+  font-size: 70px;
+  cursor: pointer;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 0.7vh;
+  right: 1.8vw;
+  font-size: 4.5vw;
+  font-weight: bolder;
+  z-index: 1;
+}
+
+span.span1 {
+  transition-duration: 0.4s;
+  position: absolute;
+  top: 3vh;
+  right: 1.8vw;
+  background-color: rgba(255, 192, 203, 0.5);
+  color: white;
+  height: 9vh;
+  width: 4.5vw;
+  font-size: 4vw;
+  padding-bottom: 1vh;
+  text-align: center;
+}
+
+span.span1:hover {
+  color: #818589;
+  text-shadow: 0 0 7px lightblue, 0 0 10px lightblue, 0 0 21px lightblue, 0 0 42px #00FFFF, 0 0 82px #00FFFF, 0 0 92px #00FFFF, 0 0 102px #00FFFF, 0 0 151px #00FFFF;
+}
+
+table.table1 {
+  width: 100%;
+  border-left: 4px solid black;
+}
+table.table1 td {
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+  padding-right: 0.7vw;
+  padding-left: 0.7vw;
+  border-right: 4px solid black;
+}
+table.table1 td td a {
+  text-align: center;
+}
+
+.highlight {
+  color: #9e2a2b;
+  font-size: 1.2em;
+  font-weight: bold;
+}/*# sourceMappingURL=styles1.css.map */

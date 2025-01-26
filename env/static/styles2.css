@@ -1,0 +1,256 @@
+body, html {
+  height: 100%;
+}
+
+body {
+  background: black;
+  background-image: url(orbit.jpg);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.centre {
+  z-index: 1;
+  position: absolute;
+  color: white;
+  text-align: center;
+  font-size: 4vw;
+  border: 0.5vw solid darkblue;
+  border-radius: 80%;
+  padding: 2.2vw;
+  width: 25%;
+  left: 34%;
+  top: 1.5vh;
+  margin-top: 0%;
+  text-shadow: 0 0 10px #818589, 0 0 17px #818589, 0 0 27px #818589, 0 0 48px #228B22, 0 0 88px #228B22, 0 0 100px #228B22, 0 0 110px #228B22, 0 0 160px #228B22;
+}
+
+.overlay {
+  height: 15%;
+  width: 0%;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  background: linear-gradient(to right bottom, #061d3d, #0b1a38, #0f1733, #11142f, #12112a);
+  background-size: 600% 600%;
+  animation: Animation1 10s ease infinite;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  transition: 0.2s;
+  opacity: 0.99;
+  display: flex;
+}
+
+.overlay-content {
+  position: relative;
+  top: 12%;
+  text-align: center;
+  margin-top: 2vh;
+  margin-left: 2.8vw;
+  font-family: "Courier New", Courier, monospace;
+  display: flex;
+}
+
+.overlay a {
+  text-decoration: none;
+  font-size: 2.4vw;
+  font-weight: bold;
+  color: whitesmoke;
+  display: block;
+  transition: 0.3s;
+  float: left;
+}
+
+.overlay div {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 4vw;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: lightgray;
+  font-size: 2.5vw;
+  text-decoration: underline;
+}
+
+.overlay div:hover, .overlay div:focus {
+  color: red;
+  font-size: 75px;
+  cursor: pointer;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 0.7vh;
+  right: 1.8vw;
+  font-size: 4.5vw;
+  font-weight: bolder;
+  z-index: 1;
+  color: lightgray;
+}
+
+span.span1 {
+  transition-duration: 0.4s;
+  position: absolute;
+  top: 3.8vh;
+  right: 1.8vw;
+  background-color: linear-gradient(to right bottom, #061d3d, #0b1a38, #0f1733, #11142f, #12112a);
+  color: white;
+  height: 9vh;
+  width: 4.5vw;
+  font-size: 4vw;
+  padding-bottom: 1vh;
+  text-align: center;
+  z-index: 1;
+}
+
+span.span1:hover {
+  color: whitesmoke;
+  text-shadow: 0 0 7px lightblue, 0 0 10px lightblue, 0 0 21px lightblue, 0 0 42px #00FFFF, 0 0 82px #00FFFF, 0 0 92px #00FFFF, 0 0 102px #00FFFF, 0 0 151px #00FFFF;
+}
+
+table.table1 {
+  width: 100%;
+  border-left: 4px solid darkblue;
+}
+table.table1 td {
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+  padding-right: 0.7vw;
+  padding-left: 0.7vw;
+  border-right: 4px solid darkblue;
+}
+table.table1 td td a {
+  text-align: center;
+}
+
+.heading {
+  color: whitesmoke;
+  position: absolute;
+  top: 40vh;
+  left: 10vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background: linear-gradient(#191970, #191970) padding-box, linear-gradient(188deg, #1ad6a5, #e16c0d, #2f24e6) border-box;
+  background-size: 400% 400%;
+  border-radius: 0.3vw;
+  border: 0.3vw solid transparent;
+  animation: Animation1 10s ease infinite;
+}
+
+@keyframes Animation1 {
+  0% {
+    background-position: 94% 0%;
+  }
+  50% {
+    background-position: 7% 100%;
+  }
+  100% {
+    background-position: 94% 0%;
+  }
+}
+.marq {
+  color: white;
+  font-size: 6vw;
+  z-index: -1;
+}
+
+.box {
+  position: absolute;
+  top: 55vh;
+  left: 12vw;
+  width: 20vw;
+  height: 30vh;
+  color: wheat;
+  background: rgba(14, 14, 14, 0.85);
+  padding: 2vw;
+  padding-top: 0.6vh;
+  padding-bottom: 1vh;
+  border: 0.8vw solid #191970;
+  border-radius: 0.8vw;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.3vw;
+  font-weight: bold;
+}
+
+.linker {
+  position: absolute;
+  right: 10vw;
+  top: 35vh;
+  font-size: 2.4vw;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+  text-decoration: underline;
+  color: wheat;
+  padding: 2vw;
+  padding-left: 6vw;
+  background: linear-gradient(170deg, grey, black) padding-box, linear-gradient(188deg, #1ad6a5, #e16c0d, #2f24e6) border-box;
+  background-size: 400% 400%;
+  border-radius: 0.3vw;
+  border: 0.3vw solid transparent;
+  animation: Animation1 10s ease infinite;
+  transition: 0.5s;
+}
+
+.linker:hover {
+  color: #4286f4;
+}
+
+.mail {
+  position: absolute;
+  bottom: 20vh;
+  right: 7vw;
+  font-size: 2.4vw;
+  text-align: center;
+  color: wheat;
+  padding: 2vw;
+  padding-left: 6vw;
+  background: linear-gradient(170deg, grey, black) padding-box, linear-gradient(188deg, #1ad6a5, #e16c0d, #2f24e6) border-box;
+  background-size: 400% 400%;
+  border-radius: 0.3vw;
+  border: 0.3vw solid transparent;
+  animation: Animation1 10s ease infinite;
+}
+
+.under:hover {
+  cursor: pointer;
+  color: #4286f4;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+#shower {
+  position: absolute;
+  display: none;
+  bottom: 8vh;
+  right: 20vw;
+  color: whitesmoke;
+  font-size: 3vw;
+  text-shadow: 0 0 7px lightblue, 0 0 10px lightblue, 0 0 21px lightblue, 0 0 42px #00FFFF, 0 0 82px #00FFFF, 0 0 92px #00FFFF, 0 0 102px #00FFFF, 0 0 151px #00FFFF;
+}
+
+.img1 {
+  height: 5vw;
+  width: 5vw;
+  position: absolute;
+  top: 37.7vh;
+  right: 51.5vw;
+}
+
+.img2 {
+  height: 5vw;
+  width: 5vw;
+  position: absolute;
+  bottom: 29.5vh;
+  right: 52.5vw;
+}/*# sourceMappingURL=styles2.css.map */

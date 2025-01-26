@@ -1,0 +1,299 @@
+body {
+  background: black;
+  padding-left: 35px;
+  padding-right: 35px;
+  background-image: url(stars.gif);
+}
+
+.rectangle1 {
+  left: 0%;
+  top: 11.2%;
+  height: 109.5%;
+  width: 3%;
+  background-color: white;
+  z-index: 1;
+  position: absolute;
+}
+
+table.table1 {
+  background-color: antiquewhite;
+  border: 5px solid;
+  border-color: rosybrown;
+  border-style: outset;
+  padding: 0.8vw;
+  font-size: 1.1vw;
+  border-collapse: collapse;
+  display: flex;
+  flex: 50%;
+  box-sizing: border-box;
+  border-width: 0%;
+  float: left;
+}
+@media only screen and (max-width: 680px) {
+  table.table1 {
+    border: 3px solid;
+  }
+}
+table.table1 th, table.table1 td {
+  border-style: solid;
+  border: 1px solid;
+  text-align: center;
+}
+
+table.table2 {
+  border: 4px aquamarine double;
+  background: linear-gradient(beige, tan);
+  position: relative;
+  left: 20%;
+}
+table.table2 th, table.table2 td {
+  border: 4px grey solid;
+  text-align: center;
+  -webkit-text-decoration: wavy;
+          text-decoration: wavy;
+  font-family: "Courier New", Courier, monospace;
+  width: 184px;
+  height: 69px;
+}
+
+button.button1 {
+  background: linear-gradient(beige, tan);
+  width: 200px;
+  height: 75px;
+  transition-duration: 0.4s;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-size: large;
+  cursor: pointer;
+}
+
+.button1:hover {
+  background: lightblue;
+  text-decoration: underline;
+}
+
+h1.header {
+  background-color: #90EEBF;
+  position: relative;
+  top: 1vh;
+  border: grey solid;
+  border-radius: 8px;
+  border-width: 8px;
+  width: 35%;
+  margin-left: 1vw;
+  border-style: outset;
+  text-align: center;
+  text-decoration-line: underline;
+  font-family: Arial, Helvetica, sans-serif;
+  outline: 8px solid;
+  outline-color: #1ad6a5;
+}
+@media only screen and (max-width: 680px) {
+  h1.header {
+    border-radius: 4px;
+    border-width: 4px;
+    outline: 4px solid;
+  }
+}
+
+img.img1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  right: 40%;
+  height: 44vh;
+  width: 44vh;
+}
+
+img.img2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  height: 42vh;
+  width: 22vw;
+  right: 75%;
+  max-width: 100%;
+}
+
+img.img3 {
+  display: block;
+  position: absolute;
+  height: 30vh;
+  width: 15vw;
+  right: 2%;
+  top: 15%;
+  max-width: 100%;
+}
+
+img.img4 {
+  display: block;
+  position: relative;
+  max-width: 80%;
+  top: 100px;
+  max-width: 100%;
+}
+
+.centre {
+  color: whitesmoke;
+  text-align: center;
+  text-shadow: 0 0 7px #818589, 0 0 10px #818589, 0 0 21px #818589, 0 0 42px #478778, 0 0 82px #478778, 0 0 92px #478778, 0 0 102px #478778, 0 0 151px #478778;
+  font-size: 2.17vw;
+}
+
+#box {
+  border: 1px solid;
+  height: 41vh;
+  width: auto;
+  /*background-image: radial-gradient(circle, #4fbf56, #00b983, #00b0a4, #00a3b5, #3495b5);*/
+  position: relative;
+}
+
+.gradient {
+  background: linear-gradient(188deg, #1ad6a5, #e16c0d, #2f24e6);
+  background-size: 600% 600%;
+  animation: Animation1 20s ease infinite;
+}
+
+@keyframes Animation1 {
+  0% {
+    background-position: 0% 87%;
+  }
+  50% {
+    background-position: 100% 14%;
+  }
+  100% {
+    background-position: 0% 87%;
+  }
+}
+.gradient2 {
+  background: linear-gradient(40deg, grey, #000000);
+  background-size: 400% 400%;
+  animation: Animation2 15s ease infinite;
+}
+
+@keyframes Animation2 {
+  0% {
+    background-position: 94% 0%;
+  }
+  50% {
+    background-position: 7% 100%;
+  }
+  100% {
+    background-position: 94% 0%;
+  }
+}
+@property --bord-angle {
+  inherits: false;
+  initial-value: 0deg;
+  syntax: "<angle>";
+}
+@keyframes spin {
+  to {
+    --bord-angle: 360deg;
+  }
+}
+article {
+  animation: spin 2.5s infinite linear;
+  animation-play-state: running;
+  border-radius: 1vw;
+  border: 0.6vw solid transparent;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  background: linear-gradient(to bottom, rgb(138, 123, 123), black) padding-box, conic-gradient(from var(--bord-angle) in oklch longer hue, oklch(28.9% 0.0858 300.28) 0 0) border-box;
+}
+
+h1.line {
+  position: relative;
+  top: 50%;
+  height: 10px;
+  width: auto;
+  border: white solid;
+  border-radius: 1vw;
+  border-width: 0.4vw;
+}
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: linear-gradient(188deg, #1ad6a5, #e16c0d, #2f24e6);
+  background-size: 600% 600%;
+  animation: Animation1 10s ease infinite;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  transition: 0.5s;
+  opacity: 0.99;
+}
+
+.overlay-content {
+  position: relative;
+  top: 13%;
+  width: 100%;
+  text-align: center;
+  margin-top: 4.2vh;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.overlay a {
+  padding: 2vh;
+  text-decoration: none;
+  font-size: 2.6vw;
+  font-weight: bold;
+  color: whitesmoke;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay div {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 2.6vw;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: black;
+  font-size: 45px;
+  text-decoration: underline;
+}
+
+.overlay div:hover, .overlay div:focus {
+  color: red;
+  font-size: 6vw;
+  cursor: pointer;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 0.3vh;
+  right: 3vw;
+  font-size: 5vw;
+  font-weight: bolder;
+}
+
+span.span1 {
+  transition-duration: 0.4s;
+  position: absolute;
+  top: 1%;
+  right: 3%;
+  background-color: rgba(90, 90, 90, 0.5);
+  width: 5vw;
+  height: 10vh;
+  max-height: 10vh;
+  font-size: 3.5vw;
+  text-align: center;
+  color: grey;
+}
+
+span.span1:hover {
+  color: #818589;
+  text-shadow: 0 0 7px lightblue, 0 0 10px lightblue, 0 0 21px lightblue, 0 0 42px #00FFFF, 0 0 82px #00FFFF, 0 0 92px #00FFFF, 0 0 102px #00FFFF, 0 0 151px #00FFFF;
+}/*# sourceMappingURL=stylesTEST.css.map */

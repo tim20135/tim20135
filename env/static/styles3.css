@@ -1,0 +1,213 @@
+body {
+  background: #e0aaff;
+  overflow-x: hidden;
+}
+
+.img1 {
+  height: auto;
+  width: 17.5vw;
+  position: absolute;
+  left: 10vw;
+  top: 2vh;
+}
+
+.centre {
+  z-index: 1;
+  position: absolute;
+  color: #3c096c;
+  text-align: center;
+  font-size: 4vw;
+  border: 0.5vw solid darkblue;
+  border-radius: 20%;
+  padding: 2.2vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  width: 25%;
+  left: 34%;
+  top: 1.5vh;
+  margin-top: 0%;
+}
+
+.overlay {
+  height: 15%;
+  width: 0%;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  background: linear-gradient(to right bottom, #061d3d, #0b1a38, #0f1733, #11142f, #12112a);
+  background-size: 600% 600%;
+  animation: Animation1 10s ease infinite;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  transition: 0.2s;
+  opacity: 0.99;
+  display: flex;
+}
+
+.overlay-content {
+  position: relative;
+  top: 12%;
+  text-align: center;
+  margin-top: 2vh;
+  margin-left: 6vw;
+  font-family: "Courier New", Courier, monospace;
+  display: flex;
+}
+
+.overlay a {
+  text-decoration: none;
+  font-size: 2.4vw;
+  font-weight: bold;
+  color: whitesmoke;
+  display: block;
+  transition: 0.3s;
+  float: left;
+}
+
+.overlay div {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 4vw;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: lightgray;
+  font-size: 2.5vw;
+  text-decoration: underline;
+}
+
+.overlay div:hover, .overlay div:focus {
+  color: red;
+  font-size: 75px;
+  cursor: pointer;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 0.7vh;
+  right: 1.8vw;
+  font-size: 4.5vw;
+  font-weight: bolder;
+  z-index: 1;
+  color: lightgray;
+}
+
+span.span1 {
+  transition-duration: 0.4s;
+  position: absolute;
+  top: 3.8vh;
+  right: 1.8vw;
+  background-color: linear-gradient(to right bottom, #061d3d, #0b1a38, #0f1733, #11142f, #12112a);
+  color: white;
+  height: 9vh;
+  width: 4.5vw;
+  font-size: 4vw;
+  padding-bottom: 1vh;
+  text-align: center;
+  z-index: 1;
+}
+
+span.span1:hover {
+  color: whitesmoke;
+  text-shadow: 0 0 7px lightblue, 0 0 10px lightblue, 0 0 21px lightblue, 0 0 42px #00FFFF, 0 0 82px #00FFFF, 0 0 92px #00FFFF, 0 0 102px #00FFFF, 0 0 151px #00FFFF;
+}
+
+table.table1 {
+  width: 100%;
+  border-left: 4px solid darkblue;
+}
+table.table1 td {
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+  padding-right: 0.7vw;
+  padding-left: 0.7vw;
+  border-right: 4px solid darkblue;
+}
+table.table1 td td a {
+  text-align: center;
+}
+
+.intro {
+  position: absolute;
+  top: 30vh;
+  left: 5vw;
+  width: 90%;
+  background: #c77dff;
+  color: black;
+  border-radius: 5vw;
+  font-weight: bold;
+}
+
+.intro a {
+  position: relative;
+  left: 35vw;
+  display: inline-block;
+  text-align: center;
+  color: darkblue;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.5vw;
+  border: 0.2vw solid darkblue;
+  padding: 0.2vw;
+  margin-bottom: 0.1vh;
+  margin-top: 0.9vh;
+  transition: 0.5s;
+}
+
+.intro a:hover {
+  text-decoration: underline;
+  color: #4286f4;
+}
+
+.intro blockquote {
+  margin-top: 0.8vh;
+  font-size: 1vw;
+}
+
+.bright {
+  position: absolute;
+  top: 48vh;
+  left: 35vw;
+  color: whitesmoke;
+  background: linear-gradient(170deg, #9d4edd, #9d4edd) padding-box, linear-gradient(188deg, #1ad6a5, #e16c0d, #2f24e6) border-box;
+  background-size: 400% 400%;
+  border-radius: 0.3vw;
+  border: 0.3vw solid transparent;
+  padding: 0.5vw 1vw 0.5vw 1vw;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 2vw;
+  animation: zoom 10s ease infinite;
+}
+
+@keyframes zoom {
+  0% {
+    background-position: 94% 0%;
+  }
+  50% {
+    background-position: 7% 100%;
+  }
+  100% {
+    background-position: 94% 0%;
+  }
+}
+.box {
+  position: absolute;
+  bottom: 5vh;
+  left: 6vw;
+  color: whitesmoke;
+}
+
+.box p {
+  width: 30%;
+  height: 20%;
+  background-color: #c77dff;
+  padding: 1vw 2vw 1vw 2vw;
+  border: #5a189a 0.5vw groove;
+  border-radius: 20%;
+  font-size: 1vw;
+}/*# sourceMappingURL=styles3.css.map */
